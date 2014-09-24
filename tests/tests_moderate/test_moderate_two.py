@@ -1,7 +1,8 @@
 import unittest
 from moderate.challenge_num_two import n_longest_lines
 
-class Test(unittest.TestCase):
+
+class NLongestLineTest(unittest.TestCase):
     """
     Given a list of elements [N, a,b, c, d], return the N longest elements
     """
