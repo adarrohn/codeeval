@@ -31,13 +31,12 @@ def mth_last(line):
 
 
 def main():
-    input_file = open(sys.argv[1], 'r')
-    for line in input_file:
-        mth_element = mth_last(line)
-        if mth_element:
-            print(mth_element)
+    with open(sys.argv[1], 'r') as input_file:
+        for line in input_file:
+            mth_element = mth_last(line)
+            if mth_element:
+                print(mth_element)
 
-    input_file.close()
 
 if __name__ == '__main__':
     main()

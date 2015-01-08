@@ -10,11 +10,10 @@ def function(line):
 
 
 def main():
-    input_file = open(sys.argv[1], 'r')
-    for line in input_file:
-        pass
+    with open(sys.argv[1], 'r') as input_file:
+        for line in input_file:
+            pass
 
-    input_file.close()
 
 if __name__ == '__main__':
     main()

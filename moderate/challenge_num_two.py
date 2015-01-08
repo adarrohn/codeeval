@@ -37,16 +37,15 @@ def n_longest_lines(line):
 
 
 def main():
-    input_file = open(sys.argv[1], 'r')
-    input_as_list = []
-    for line in input_file:
-        if line.rstrip():
-            input_as_list.append(line.rstrip())
+    with open(sys.argv[1], 'r') as input_file:
+        input_as_list = []
+        for line in input_file:
+            if line.rstrip():
+                input_as_list.append(line.rstrip())
 
-    for line in n_longest_lines(input_as_list):
-        print(line)
+        for line in n_longest_lines(input_as_list):
+            print(line)
 
-    input_file.close()
 
 if __name__ == '__main__':
     main()

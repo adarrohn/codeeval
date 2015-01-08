@@ -1,7 +1,7 @@
 '''
 Codeeval 93 (Easy)
 
- Write a program which capitalizes the first letter of each word in a sentence.
+Write a program which capitalizes the first letter of each word in a sentence.
 Input sample:
 
 Your program should accept as its first argument a path to a filename. Input example is the following
@@ -31,11 +31,10 @@ def capitalize_words(line):
 
 
 def main():
-    input_file = open(sys.argv[1], 'r')
-    for line in input_file:
-        print(capitalize_words(line.rstrip()))
+    with open(sys.argv[1], 'r') as input_file:
+        for line in input_file:
+            print(capitalize_words(line.rstrip()))
 
-    input_file.close()
 
 if __name__ == '__main__':
     main()
