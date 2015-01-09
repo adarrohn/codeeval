@@ -19,7 +19,6 @@ def return_longest_word(line):
         return longest
 
 
-
 def main():
     with open(sys.argv[1], 'r') as input_file:
         for line in input_file:
